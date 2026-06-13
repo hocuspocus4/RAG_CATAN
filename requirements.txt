@@ -1,0 +1,7 @@
+# Deliberately lightweight — no torch, no embeddings — so it installs in seconds
+# and fits free hosting tiers (Streamlit Community Cloud, Hugging Face Spaces).
+streamlit>=1.36       # web UI (mobile-friendly)
+pdfplumber>=0.11      # read the rulebook PDF
+rank-bm25>=0.2.2      # lexical retrieval (tiny, pure-Python)
+python-dotenv>=1.0    # load GROQ_API_KEY from .env locally
+# Generation uses Groq's HTTP API via the Python standard library — no SDK needed.
